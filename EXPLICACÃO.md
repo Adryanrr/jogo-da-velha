@@ -1,3 +1,5 @@
+Estas são diretivas de pré-processamento que incluem as bibliotecas padrão necessárias para este programa. `stdio.h` para entrada e saída padrão, `stdbool.h` para usar o tipo de dado booleano, `stdlib.h` para funções de alocação de memória, `time.h` para manipulação de tempo e `unistd.h` para algumas funcionalidades relacionadas ao sistema.
+
 ```c
 #include <stdio.h>
 #include <stdbool.h>
@@ -5,12 +7,12 @@
 #include <time.h>
 #include <unistd.h>
 ```
-Estas são diretivas de pré-processamento que incluem as bibliotecas padrão necessárias para este programa. `stdio.h` para entrada e saída padrão, `stdbool.h` para usar o tipo de dado booleano, `stdlib.h` para funções de alocação de memória, `time.h` para manipulação de tempo e `unistd.h` para algumas funcionalidades relacionadas ao sistema.
+Declaração de uma matriz 3x3 chamada `board` que representa o tabuleiro do jogo. Cada posição no tabuleiro pode conter 'X', 'O' ou um espaço em branco ' '.
 
 ```c
 char board[3][3]; // Tabuleiro do jogo
 ```
-Declaração de uma matriz 3x3 chamada `board` que representa o tabuleiro do jogo. Cada posição no tabuleiro pode conter 'X', 'O' ou um espaço em branco ' '.
+Função para inicializar o tabuleiro do jogo com espaços em branco.
 
 ```c
 void initialize_board() {
@@ -21,7 +23,7 @@ void initialize_board() {
     }
 }
 ```
-Função para inicializar o tabuleiro do jogo com espaços em branco.
+Função para imprimir o tabuleiro do jogo na saída padrão.
 
 ```c
 void print_board() {
@@ -37,7 +39,7 @@ void print_board() {
     printf("\n");
 }
 ```
-Função para imprimir o tabuleiro do jogo na saída padrão.
+Função para verificar se há um vencedor no jogo.
 
 ```c
 char check_winner() {
@@ -63,7 +65,7 @@ char check_winner() {
     return ' '; // Se não houver vencedor
 }
 ```
-Função para verificar se há um vencedor no jogo.
+Função para verificar se o tabuleiro está cheio (ou seja, se houve um empate).
 
 ```c
 bool check_full() {
@@ -77,7 +79,7 @@ bool check_full() {
     return true; // Tabuleiro está cheio
 }
 ```
-Função para verificar se o tabuleiro está cheio (ou seja, se houve um empate).
+Função que simula a jogada do computador. Ele escolhe uma posição aleatória no tabuleiro.
 
 ```c
 void computer_play() {
@@ -94,7 +96,8 @@ void computer_play() {
     board[row][col] = 'O';
 }
 ```
-Função que simula a jogada do computador. Ele escolhe uma posição aleatória no tabuleiro.
+Função principal do programa. Inicializa o tabuleiro, define o jogador atual como 'X' e começa o loop principal do jogo.
+
 
 ```c
 int main() {
@@ -110,4 +113,3 @@ int main() {
     return 0;
 }
 ```
-Função principal do programa. Inicializa o tabuleiro, define o jogador atual como 'X' e começa o loop principal do jogo.
