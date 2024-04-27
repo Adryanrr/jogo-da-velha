@@ -6,14 +6,21 @@ Este é um jogo simples de Jogo da Velha feito pelo chat GPT para estudo da ling
 
 ## Conceitos Abordados:
 
-Declaração e uso de funções.
-Uso de arrays multidimensionais para representar o tabuleiro do jogo.
-Uso de estruturas de controle, como loops e condicionais.
-Entrada e saída de dados usando printf() e scanf().
-Geração de números aleatórios usando rand() e srand().
-Manipulação de strings e caracteres.
-Simulação de espera usando usleep() para criar uma animação de carregamento.
-Objetivos de Aprendizado:
+- Declaração e uso de funções.
+- Uso de arrays multidimensionais para representar o tabuleiro do jogo.
+- Uso de estruturas de controle, como loops e condicionais.
+- Entrada e saída de dados usando `printf()` e `scanf()`.
+- Geração de números aleatórios usando `rand()` e `srand()`.
+- Manipulação de strings e caracteres.
+- Simulação de espera usando `usleep()` para criar uma animação de carregamento.
+
+## Objetivos de Aprendizado:
+
+- Compreender como implementar um jogo simples em C.
+- Familiarizar-se com a utilização de arrays multidimensionais para representar um tabuleiro.
+- Praticar o uso de funções para organizar o código.
+- Entender como implementar lógica de jogo, incluindo verificação de vencedor e empate.
+- Aprender sobre simulação de espera para melhorar a experiência do usuário.
 
 Este código é adequado para estudantes iniciantes em C que desejam consolidar os conceitos básicos da linguagem, como variáveis, estruturas de controle, funções e arrays, enquanto constroem um projeto prático. Ele também oferece a oportunidade de explorar conceitos mais avançados, como geração de números aleatórios e manipulação de caracteres.
 
